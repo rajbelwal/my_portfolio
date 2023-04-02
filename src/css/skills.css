@@ -1,0 +1,133 @@
+.skills {
+  width: 50%;
+  margin: 3.4% auto;
+  margin-top: 8.5%;
+  margin-bottom: 7%;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 15% 5% 5% 5% 12% 12% 12% 12% 12% 12%;
+}
+
+.darkSkills {
+  width: 50%;
+  margin: 3.4% auto;
+  margin-bottom: 7%;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 15% 5% 5% 5% 12% 12% 12% 12% 12% 12%;
+}
+
+.darkSkills h2 {
+  color: white;
+}
+
+.line {
+  width: 80%;
+  grid-column: 3/4;
+}
+
+.p {
+  grid-column: 5/6;
+}
+
+.darkSkills img {
+  width: 55%;
+}
+
+.skills img:hover {
+  width: 55%;
+  transform: scale(0.85);
+  transition: 0.5s;
+}
+
+.darkSkills img:hover {
+  width: 55%;
+  transform: scale(0.85);
+  transition: 0.5s;
+}
+
+.skills img {
+  width: 55%;
+}
+
+@media screen and (max-width: 600px) {
+  /* .skills {
+    display: grid;
+    grid-template-columns: repeat(6, 12%);
+    grid-auto-rows: 2rem;
+  }
+
+  .tech{
+    font-size: 1.2rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-content: right;
+    display: flex;    
+}
+
+.line{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: start;
+    font-weight: 900;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+
+  .p {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+  }
+
+  .j {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+
+  .r {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+
+  .c {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+  }
+
+  .h {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+  }
+
+  .cs {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+  } */
+
+  .skills {
+    width: 80%;
+    grid-template-columns: 15% 2% 5% 5% 12% 12% 12% 12% 12% 12%;
+  }
+
+  .darkSkills {
+    width: 80%;
+    margin: 7% auto;
+    grid-template-columns: 15% 2% 5% 5% 12% 12% 12% 12% 12% 12%;
+  }
+
+  .tech {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+  }
+}

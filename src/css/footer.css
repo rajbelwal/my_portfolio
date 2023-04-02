@@ -1,0 +1,58 @@
+.footer {
+  background-color: rgb(93, 139, 136);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.getInTouch {
+  margin-bottom: 2%;
+}
+
+.footer-container {
+  color: rgb(9, 235, 247);
+  margin-top: 2%;
+  width: 40%;
+  margin-bottom: 0.5%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-links a {
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-links a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.footer-links p {
+  color: rgb(255, 255, 255);
+  margin-left: 5%;
+  margin-right: 3%;
+}
+
+@media screen and (max-width: 521px) {
+  .getInTouch {
+    margin-top: 2%;
+  }
+
+  .footer {
+    height: 12vh;
+  }
+
+  .footer-container {
+    width: 80%;
+    margin-bottom: 0%;
+  }
+}

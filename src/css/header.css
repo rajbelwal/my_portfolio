@@ -1,0 +1,175 @@
+.main-header {
+  height: 100%;
+}
+
+.lightHeader {
+  display: grid;
+  grid-template-columns: 4rem 1fr 3fr 0.5fr 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  height: 12%;
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+}
+
+.darkHeader {
+  background-color: #252525d2;
+  color: white;
+  display: grid;
+  grid-template-columns: 4rem 1fr 3fr 0.5fr 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  height: 12%;
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+}
+
+/* LOGO */
+
+.logo {
+  grid-column: 2/3;
+  display: grid;
+  align-items: center;
+  text-align: left;
+  justify-content: start;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.logo h6:hover {
+  color: aqua;
+  transition: 0.5s;
+}
+
+.logo h6 {
+  transition: 0.5s;
+}
+
+.logo {
+  transition: 0.5s;
+  animation: rajbelwal-portfolio 1.8s infinite alternate ease-in-out;
+}
+
+@keyframes rajbelwal-portfolio {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* NAVIGATORS */
+
+.navigators {
+  grid-column: 3/4;
+  display: grid;
+}
+
+.navigators ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.navigators a {
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+}
+
+.navigators ul li {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigators ul li:hover {
+  transform: scale(1.2);
+  color: aqua;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* BUTTONS */
+
+.buttons {
+  text-align: right;
+}
+
+.darkLight {
+  grid-column: 4/5;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.lightLight {
+  grid-column: 4/5;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.menu {
+  grid-column: 2/3;
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .lightHeader {
+    grid-template-columns: 2rem 1fr 3fr 1fr 2rem;
+    height: 4rem;
+  }
+
+  .darkHeader {
+    grid-template-columns: 2rem 1fr 3fr 1fr 2rem;
+    height: 4.5rem;
+  }
+
+  .logo {
+    height: 10vh;
+    grid-column: 3/4;
+    justify-content: center;
+    /* background-color: aqua; */
+  }
+
+  .navigators {
+    display: none;
+  }
+
+  .darkLight {
+    height: 10vh;
+    /* background-color: brown; */
+    /* width: 4rem; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .menu {
+    /* position: relative; */
+    height: 10vh;
+    /* background-color: rgb(255, 142, 246); */
+    display: block;
+    grid-column: 2/3;
+    text-align: left;
+  }
+
+  #dropdown-button-dark-example2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(60, 60, 60);
+  }
+
+  .user {
+    width: 1.5rem;
+    margin: 0.5rem;
+    margin-left: 0rem;
+  }
+}

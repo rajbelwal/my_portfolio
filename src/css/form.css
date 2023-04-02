@@ -1,0 +1,200 @@
+.form-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    #ffffff,
+    rgba(189, 227, 255, 0.699),
+    #ffffff
+  );
+  padding-top: 5%;
+}
+
+.dark-form-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#252525, #373737b2, #252525);
+  padding-top: 5%;
+}
+
+.form-getInTouch2 {
+  display: none;
+}
+
+.form-outer:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.1px 0.1px 30px 0px;
+  transition: 2s;
+}
+
+.dark-form-outer:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.1px 0.1px 30px 10px rgba(131, 246, 250, 0.307);
+  transition: 2s;
+}
+
+.form-outer:not(:hover) {
+  transition: 2s;
+}
+
+.dark-form-outer:not(:hover) {
+  transition: 2s;
+}
+
+.form {
+  margin: 5%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.dark-form-outer .form {
+  color: white;
+  margin: 5%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.main-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form p {
+  margin-bottom: 8%;
+}
+
+.main-form label {
+  margin-bottom: 2%;
+}
+
+.main-form input {
+  margin-bottom: 10%;
+  border: none;
+  padding: 2%;
+  color: rgb(71, 71, 71);
+}
+
+.main-form textarea {
+  border: none;
+  padding: 2%;
+  color: rgb(71, 71, 71);
+}
+
+.form-button {
+  margin-top: 10%;
+  background-color: aqua;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 1%;
+  padding: 5%;
+  font-size: 1.2rem;
+}
+
+.form-getInTouch {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dark-form-outer .form-getInTouch h1 {
+  color: rgba(160, 232, 232, 0.808);
+  font-size: 5rem;
+  transition: 0.5s;
+}
+
+.dark-form-outer .form-getInTouch h1:hover {
+  font-size: 5rem;
+  color: rgb(124, 255, 255);
+  transition: 0.5s;
+}
+
+.form-getInTouch h1 {
+  color: rgb(129, 100, 100);
+  font-size: 5rem;
+}
+
+.contact-links {
+  margin-left: 5%;
+  font-size: 0.6rem;
+}
+
+.contact-links a{
+  
+  text-decoration: none;
+}
+
+.contact-links-2 {
+  display: flex;
+}
+
+@media screen and (max-width: 1290px) {
+  .form-outer .form,
+  .dark-form-outer .form {
+    width: 70%;
+    width: 100%;
+  }
+
+  .form-getInTouch h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form-outer,
+  .dark-form-outer {
+    margin-top: 15%;
+  }
+
+  .form,
+  .dark-form-outer .form {
+    width: 100%;
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-outer .main-form,
+  .dark-form-outer .main-form {
+    width: 96%;
+  }
+
+  .form-getInTouch {
+    display: none;
+  }
+
+  .form-getInTouch2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120%;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .contact-links-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+  }
+
+  .form-outer .contact-links-2 span,
+  .dark-form-outer .contact-links-2 span {
+    font-size: 0.7rem;
+    margin: 3%;
+  }
+}

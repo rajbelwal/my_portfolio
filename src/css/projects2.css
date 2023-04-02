@@ -1,0 +1,133 @@
+.project-outer {
+  box-shadow: 10px 10px 40px 8px rgba(29, 29, 29, 0.753);
+  margin: 4%;
+}
+
+.dark-project-outer {
+  box-shadow: 1px 1px 10px 1px rgba(42, 165, 163, 0.174);
+  transition: 1s;
+  margin: 4%;
+}
+
+.dark-project-outer:hover {
+  box-shadow: 1px 1px 15px 1px rgba(42, 165, 163, 0.529);
+  transition: 1s;
+  margin: 4%;
+}
+
+.projects {
+  position: relative;
+}
+
+.projects h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-bottom: 2%;
+  margin-bottom: -2%;
+}
+
+.dark-project-outer .projects h1 {
+  color: white;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-bottom: 2%;
+  margin-bottom: -2%;
+}
+
+.components {
+  display: flex;
+  align-items: center;
+}
+
+#slider {
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin: 1%;
+  padding: 1.5%;
+  scroll-behavior: smooth;
+}
+
+#slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-icon {
+  color: white;
+  background-color: rgb(43, 43, 43);
+  background-color: rgb(141, 141, 141);
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.project-outer .slider-icon {
+  color: white;
+  background-color: rgb(43, 43, 43);
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.slider-icon:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.slider-card:hover {
+  transform: scale(1.06);
+}
+
+.dark-project-outer .slider-card, .slider-card  {
+  width: 450px;
+  box-shadow: 1px 1px 10px 1px rgba(100, 100, 100, 0.738);
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+  transition: 0.5s;
+}
+
+.dark-project-outer .slider-card:hover {
+  transform: scale(1.06);
+}
+
+@media screen and (max-width: 800px) {
+  .projects h1 {
+    padding: 6%;
+  }
+
+  .dark-project-outer .projects h1 {
+    padding: 6%;
+  }
+
+  .dark-project-outer .slider-card {
+    width: 310px;
+  }
+
+  .slider-card {
+    width: 310px;
+    box-shadow: 1px 1px 10px 1px;
+  }
+
+  .slider-card:hover {
+    transform: scale(0.95);
+  }
+
+  .dark-project-outer .slider-card:hover {
+    transform: scale(0.95);
+  }
+}
